@@ -1,6 +1,9 @@
 package Esercizio.Prova1;
 import java.util.Random;
 
+import sorter.BubbleSort.Bubble;
+import sorter.InsertionSort.Insertion;
+
 public class OrdinaArrayObject {
 
 	// ordinamento interi
@@ -84,8 +87,12 @@ public class OrdinaArrayObject {
 		// S[i] = new Studente();
 		// }
 
-		OrdinaArrayObject.bubblesort(S);
-		OrdinaArrayObject.stampaArray(S);
+		Insertion b = new Insertion(S);
+		b.sort();
+		for (Studente studente : S) {
+
+			System.out.println(studente);
+		}
 
 	}
 
